@@ -1,18 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:text="Bievenido a Preventivos Covid"
+        android:gravity="center"
+        android:paddingTop="80px"
+        android:textSize="70px"
+        android:textColor="@color/primary_light"
+        ></TextView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Iniciar sesion"
+        android:paddingTop="100px"
+        android:paddingLeft="100px"
+        android:textStyle="bold"
+        android:textSize="55px"
+        android:textColor="@color/colorAccent"
+        ></TextView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese rut del usuario"
+        android:layout_marginTop="70px"
+        android:paddingLeft="100px"
+        android:textColor="@color/primary_light"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:id="@+id/rutLogin"
+        android:textColor="@color/primary_light"
+        ></EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:layout_marginTop="100px"
+        android:paddingLeft="100px"
+        android:textColor="@color/primary_light"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:inputType="textPassword"
+        android:id="@+id/contrasenaLogin"
+        android:textColor="@color/primary_light"
+        ></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesion"
+        android:layout_marginLeft="200px"
+        android:layout_marginRight="200px"
+        android:id="@+id/btnLogin"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="100px"
+        ></Button>
+
+
+</LinearLayout>

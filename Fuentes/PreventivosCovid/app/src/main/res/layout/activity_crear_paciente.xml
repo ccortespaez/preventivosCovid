@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CrearPacienteActivity">
+    <include layout="@layout/toolbar"></include>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos Personales del paciente"
+            android:textSize="16dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/colorPrimaryDark"
+
+            ></TextView>
+
+
+    <EditText
+        android:id="@+id/nombre_paciente_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del paciente"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:textSize="14dp"
+        android:textColor="@color/primary_light"
+        ></EditText>
+
+        <EditText
+            android:id="@+id/apellido_paciente_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido del paciente"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:textSize="@dimen/texto_size"
+            android:layout_marginTop="@dimen/margin_top_form"
+            android:textColor="@color/primary_light"
+            ></EditText>
+
+    <EditText
+        android:id="@+id/rut_paciente_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rut del paciente"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="@dimen/margin_top_form"
+        android:textSize="@dimen/texto_size"
+        android:textColor="@color/primary_light"
+        ></EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos medicos"
+        android:textSize="16dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+        <EditText
+            android:id="@+id/temperatura_paciente_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Temperatura"
+            android:textSize="@dimen/texto_size">
+            android:textColor="@color/primary_light"
+        </EditText>
+
+        <EditText
+            android:id="@+id/presion_paciente_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:hint="Presion arterial"
+            android:textSize="@dimen/texto_size"
+            android:textColor="@color/primary_light"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="@dimen/margin_top_form">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textoSintoma"
+            android:text="¿Presenta Sintoma?"
+            android:layout_weight="1"
+            android:textSize="@dimen/texto_size"
+            ></TextView>
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchSintoma"
+            android:textOff="No"
+            android:textOn="Si"
+            android:layout_weight="1"></Switch>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="@dimen/margin_top_form">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textoTos"
+            android:text="¿Tiene Tos?"
+            android:layout_weight="1"
+            android:textSize="@dimen/texto_size"></TextView>
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchTos"
+            android:textOff="No"
+            android:textOn="Si"
+            android:layout_weight="1"></Switch>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos Extras"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="20dp"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textSize="@dimen/texto_size"
+            android:layout_weight="1">
+        </TextView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/fecha"
+            android:onClick="abrirCalendario"
+            android:text="Calendario"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/primary_light"
+            ></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="@dimen/margin_top_form">
+        <TextView
+            android:text="Area de trabajo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/generoTxt"></TextView>
+        <Spinner
+            android:id="@+id/spinnerArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></Spinner>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="100px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:id="@+id/registrarBtn"
+        android:layout_marginLeft="200px"
+        android:layout_marginRight="200px"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/primary_light"
+        ></Button>
+
+
+
+</LinearLayout>
