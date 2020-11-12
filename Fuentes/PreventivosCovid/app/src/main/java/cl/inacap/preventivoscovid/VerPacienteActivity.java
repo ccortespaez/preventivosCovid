@@ -14,7 +14,6 @@ public class VerPacienteActivity extends AppCompatActivity {
     private TextView nombreTxt;
     private TextView rutTxt;
     private TextView fechaTxt;
-    private TextView apellidoTxt;
     private TextView temperaturaTxt;
     private TextView sintomasTxt;
     private TextView tosTxt;
@@ -33,7 +32,6 @@ public class VerPacienteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ver_paciente);
         this.toolbar = findViewById(R.id.toolbar);
         this.nombreTxt = findViewById(R.id.nombrePacienteTxt);
-        this.apellidoTxt = findViewById(R.id.apellidoPacienteTxt);
         this.rutTxt = findViewById(R.id.rutPacienteTxt);
         this.fechaTxt = findViewById(R.id.fechaPacienteTxt);
         this.presionTxt = findViewById(R.id.presionPacienteTxt);
@@ -46,15 +44,14 @@ public class VerPacienteActivity extends AppCompatActivity {
         this.getSupportActionBar().setDisplayShowHomeEnabled(true);
         if (getIntent() != null){
             Paciente paciente = (Paciente)getIntent().getSerializableExtra("paciente");
-            this.nombreTxt.setText(paciente.getNombre());
-            this.apellidoTxt.setText(paciente.getApellido());
-            this.rutTxt.setText(paciente.getRut());
-            this.fechaTxt.setText(paciente.getFecha());
-            this.presionTxt.setText(""+paciente.getPresionArterial());
-            this.temperaturaTxt.setText(""+paciente.getTemperatura());
-            this.sintomasTxt.setText(paciente.getSintomas());
-            this.tosTxt.setText(paciente.getTos());
-            this.areaTrabajoTxt.setText(paciente.getAreaTrabajo());
+            this.nombreTxt.setText("Nombre: "+paciente.getNombre() + " "+ paciente.getApellido());
+            this.rutTxt.setText("Rut: "+paciente.getRut());
+            this.fechaTxt.setText("Fecha: "+paciente.getFecha());
+            this.presionTxt.setText("Presion Arterial: "+paciente.getPresionArterial());
+            this.temperaturaTxt.setText("Temperatura: "+paciente.getTemperatura());
+            this.sintomasTxt.setText("Sintomas: = "+paciente.getSintomas());
+            this.tosTxt.setText("Tos: "+paciente.getTos());
+            this.areaTrabajoTxt.setText("Area de trabajo: "+paciente.getAreaTrabajo());
         }
     }
 }

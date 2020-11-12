@@ -29,8 +29,8 @@ public class PacientesDAOSQLite implements PacientesDAO{
                         Paciente p = new Paciente();
                         p.setId(c.getInt(0));
                         p.setNombre(c.getString(1));
-                        p.setRut(c.getString(2));
-                        p.setApellido(c.getString(3));
+                        p.setApellido(c.getString(2));
+                        p.setRut(c.getString(3));
                         p.setFecha(c.getString(4));
                         p.setAreaTrabajo(c.getString(5));
                         p.setTemperatura(c.getInt(6));

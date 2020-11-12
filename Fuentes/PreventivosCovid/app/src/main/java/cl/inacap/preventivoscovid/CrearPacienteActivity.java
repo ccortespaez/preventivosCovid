@@ -92,7 +92,7 @@ public class CrearPacienteActivity extends AppCompatActivity{
                     errores.add(" Debe ingresar el apellido del paciente");
                 }
                 if (validaRut(rut)==false){
-                    errores.add(" Debe ingresar el rut del paciente");
+                    errores.add(" Debe ingresar un rut valido");
                 }
                 if (fecha.isEmpty()){
                     errores.add(" Debe ingresar una fecha valida");

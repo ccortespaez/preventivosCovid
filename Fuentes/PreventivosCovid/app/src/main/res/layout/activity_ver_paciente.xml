@@ -11,49 +11,57 @@
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:gravity="center_horizontal"
            android:id="@+id/nombrePacienteTxt"
-           android:textSize="@dimen/titulo_app_size"
-           android:layout_marginTop="80px">
-       </TextView>
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:gravity="center_horizontal"
-           android:id="@+id/apellidoPacienteTxt"
-           android:textSize="@dimen/titulo_app_size"
-           android:layout_marginTop="80px">
+           android:textSize="20dp"
+           android:layout_marginTop="80px"
+           android:layout_marginRight="50px"
+           android:layout_marginLeft="50px">
        </TextView>
 
         <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/fechaPacienteTxt"></TextView>
+        android:id="@+id/fechaPacienteTxt"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="50px"></TextView>
+
         <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rutPacienteTxt"></TextView>
+        android:id="@+id/rutPacienteTxt"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="50px"></TextView>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/temperaturaPacienteTxt"></TextView>
+        android:id="@+id/temperaturaPacienteTxt"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"></TextView>
         <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/presionPacienteTxt"></TextView>
+        android:id="@+id/presionPacienteTxt"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="50px"></TextView>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/areaPacienteTxt"></TextView>
+        android:id="@+id/areaPacienteTxt"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"></TextView>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tosPacienteTxt"></TextView>
+        android:id="@+id/tosPacienteTxt"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"></TextView>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sintomasPacienteTxt"></TextView>
+        android:id="@+id/sintomasPacienteTxt"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"></TextView>
 
 
 </LinearLayout>

@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="100px"
         android:layout_marginRight="100px"
-        android:inputType="textPassword"
+        android:inputType="numberPassword"
         android:id="@+id/contrasenaLogin"
         android:textColor="@color/primary_light"
         ></EditText>

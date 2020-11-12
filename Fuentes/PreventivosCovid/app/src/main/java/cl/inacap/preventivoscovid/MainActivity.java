@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     if (!validaRut(rut)) {
                         Toast.makeText(MainActivity.this
-                                , "Nombre de usuario incorrecto"
+                                , "Nombre de usuario invalido"
                                 , Toast.LENGTH_SHORT).show();
                     }
                     //123 4567 -0
@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "La contraseña es incorrecta", Toast.LENGTH_SHORT).show();
                             }
                         }
+                    }else{
+                        Toast.makeText(MainActivity.this, "Debe ingresar nombre de usuario", Toast.LENGTH_SHORT).show();
                     }
                     //1234 5689 -0
                     if (!rut.isEmpty()){

@@ -28,7 +28,7 @@
         android:layout_marginLeft="50px"
         android:layout_marginRight="50px"
         android:textSize="14dp"
-        android:textColor="@color/primary_light"
+        android:textColor="@color/primary_text"
         ></EditText>
 
         <EditText
@@ -40,7 +40,7 @@
             android:layout_marginRight="50px"
             android:textSize="@dimen/texto_size"
             android:layout_marginTop="@dimen/margin_top_form"
-            android:textColor="@color/primary_light"
+            android:textColor="@color/primary_text"
             ></EditText>
 
     <EditText
@@ -52,7 +52,7 @@
         android:layout_marginRight="50px"
         android:layout_marginTop="@dimen/margin_top_form"
         android:textSize="@dimen/texto_size"
-        android:textColor="@color/primary_light"
+        android:textColor="@color/primary_text"
         ></EditText>
 
     <TextView
@@ -75,8 +75,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Temperatura"
-            android:textSize="@dimen/texto_size">
-            android:textColor="@color/primary_light"
+            android:textSize="@dimen/texto_size"
+            android:textColor="@color/primary_text"
+            android:inputType="number">
         </EditText>
 
         <EditText
@@ -87,7 +88,7 @@
             android:layout_weight="1"
             android:hint="Presion arterial"
             android:textSize="@dimen/texto_size"
-            android:textColor="@color/primary_light"></EditText>
+            android:textColor="@color/primary_text"></EditText>
     </LinearLayout>
 
     <LinearLayout
